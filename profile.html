@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/jpg" sizes="16x16" href="images/icon.jpg">
+   <title>WisorBook</title>
+  <!--Bootstrap css CDN-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+ 
+</head>
+<body>
+  <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" >
+      <div class="container-fluid">
+         
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+              <span>More</span>
+            <i class="fa fa-angle-double-down"></i>
+              
+            </button>
+          
+            <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-md" aria-hidden="true"></i> WisorBook</a>
+        </div>
+        <div id="my" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right shiftLeft">
+      
+              <li><a href="index.html"><i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+              <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav><br/><br/><br/><!--NAV END-->
+
+<!--Cover Photo-->
+    <div class="container jumbotron myjumbotron">
+       <img src="images/profile.png" class="profile img-responsive thumbnail"/>
+       <h2 class="name hidden-xs"><strong></strong></h2>
+     
+    </div>
+
+    <!--Main information section -->
+    
+    <div class="container about">
+        <div class="panel panel-default">
+            
+              <nav class="navbar navbar-default " role="navigation">
+                <div class="container-fluid">
+                    
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand"><i class="fa fa-user fa-lg" aria-hidden="true"></i><strong> About</strong></span>
+                  </div>  
+                </div>
+              </nav>
+
+   
+              
+              
+           
+              <div class="panel-body">
+                <div class="row">
+                  
+                   <div class="col-sm-3 col-md-3">
+                     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                      <ul class="nav nav-pills nav-stacked red ">
+                        <li class="active"><a data-toggle="pill" href="#home" >Basic Info</a></li>
+                        <li><a data-toggle="pill" href="#menu1">Work & education</a></li>
+                        <li><a data-toggle="pill" href="#menu2">Place you've lived</a></li>
+                        <li><a data-toggle="pill" href="#menu3">Relationship</a></li>
+                         <li><a data-toggle="pill" href="#menu4">Details</a></li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                    <div class="col-sm-1 col-md-1 hidden-xs">
+                       <div class="vertical-line"></div>
+                    </div>
+                     <div class="col-xs-12 col-sm-8 col-md-8 adjust-menu-content">
+                       <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                          <div class="information">
+                             <div class="row">
+                                <div class="col-xs-5 col-sm-4 col-md-4 title">
+                                    <p>First Name</p>
+                                    <p>Last Name</p>
+                                    <p>Email</p>
+                                    <p>Age</p>
+                                    <p>Birthday</p>
+                                    <p>Gender</p>
+                                    <p>Languages</p>
+                                  
+
+                                </div>
+                                <div class="col-xs-7 col-sm-4 col-md-8 ">
+
+                                    <i class="fa fa-spinner fa-pulse fa-lg profile-spin "></i>
+                                    <p class="fname"></p>
+                                    <p class="lname"></p>
+                                    <p class="email"></p>
+                                    <p class="age"></p>
+                                    <p class="birth"></p>
+                                    <p class="gender"></p>
+                                    <p class="lang"></p>
+                                    
+
+                                    
+                                </div>
+
+                             </div>
+
+                         </div>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                          <div class="row work-education">
+                             <div class="col-xs-12 col-md-12">
+                               <i class="fa fa-graduation-cap fa-lg"></i><strong id="heading"> Work</strong> <br/><br/>
+                             
+                              <div class="work">
+                                
+                              </div><br/><br/>
+
+                               <i class="fa fa-mortar-board fa-lg"></i><strong id="heading"> Education</strong>
+                                <br/><br/>
+                              <div class="education">
+                                
+                              </div><br/><br/>
+                             </div>
+                          </div>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                          <div class="row place">
+                             <div class="col-xs-12 col-md-12">
+                                <i class="fa fa-home fa-lg" aria-hidden="true"></i><strong id="heading"> Current City</strong> <br/><br/>
+                             
+                                <div class="city">
+                                 
+                                </div><br/><br/>
+
+                                <i class="fa fa-home fa-lg" aria-hidden="true"></i><strong id="heading"> Hometown</strong>
+                                <br/><br/>
+                                <div class="home">
+                                  
+                                </div><br/><br/>
+                             </div>
+                          </div>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                           <div class="row relation">
+                             <div class="col-xs-12 col-md-12">
+                               <i class="fa fa-heart fa-lg"></i><strong id="heading"> Relationship Status</strong> <br/><br/>
+                             
+                                <div class="status">
+                                
+                                </div><br/><br/>
+
+
+                             </div>
+                          </div>
+                        </div>
+                        <div id="menu4" class="tab-pane fade">
+                          <div class="row detail">
+                             <div class="col-xs-12 col-md-12">
+                               <i class="fa fa-user fa-lg" aria-hidden="true"></i><strong id="heading"> About Me</strong> <br/><br/>
+                             
+                                <div class="about-me">
+                                  
+                                </div><br/><br/>
+
+                                <i class="fa fa-pencil fa-lg"></i><strong id="heading"> Hometown</strong>
+                                <br/><br/>
+                                <div class="quote">
+                                  
+                                </div><br/><br/>
+                             </div>
+                          </div>
+                        </div>
+
+                      </div><!--tab content END-->
+                    </div><!--column END-->
+                </div><!--row END-->
+              </div><!--panel body END-->
+        </div><!--panel end-->
+        
+    </div><!--container-->
+
+    <!--books section-->
+    <div class="container about">
+       <div class="panel panel-default">
+          <div class="panel-heading">
+             <h4><i class="fa fa-video-camera"></i><strong> Movies</strong> </h4>
+          </div>
+          <div class="panel-body">
+              <div class="row add-columns">
+                <div class="text-center">
+                  <i class="fa fa-spinner fa-pulse fa-lg "></i>
+                </div>
+              </div>
+          </div>
+       </div>
+    </div>
+
+    <!--Movies section-->
+    <div class="container about">
+       <div class="panel panel-default">
+          <div class="panel-heading">
+             <h4><i class="fa fa-music fa-lg"></i><strong> Music</strong> </h4>
+          </div>
+          <div class="panel-body">
+              <div class="row add-columns-music">
+                <div class="text-center">
+                  <i class="fa fa-spinner fa-pulse fa-lg "></i>
+               </div>
+              </div>
+          </div>
+       </div>
+    </div>
+
+    <!--Television section-->
+    <div class="container about">
+       <div class="panel panel-default">
+          <div class="panel-heading">
+             <h4><i class="fa fa-television fa-lg"></i><strong> Television</strong> </h4>
+          </div>
+          <div class="panel-body">
+              <div class="row add-columns-tele">
+                <div class="text-center">
+                  <i class="fa fa-spinner fa-pulse fa-lg"></i>
+              </div>
+              </div>
+          </div>
+       </div>
+    </div>
+    <hr>
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+     <span class="pull-right">Created By<b> Anchal Nigam</b></span>
+    </div>
+</div>
+<!-- FOR GETTING FACEBOOK TOKEN FROM USER -->
+<a href="#myModalpost" class="btn btn-primary btn-sm hidden" data-toggle="modal" id="get">Check</a>
+    <div class="modal fade-scale" id="myModalpost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel" style="color: green">Token Information</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="postby">Enter Facebook Token Information</label>
+                <input type="text" class="form-control" id="token" placeholder="Enter your token">
+                <p id="vname"></p>
+              </div>
+       
+          
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="go">Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END OF USER INPUT TAKING MODAL -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Bootstrap JS CDN-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>  
+<!--Lodash javascript library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<!--my info javascript file-->
+ <script src="js/myinfo.js"></script>
+
+
+</script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" sizes="16x16" href="images/icon.jpg">
+   <title>WisorBook</title>
+  <!--Bootstrap css CDN-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+ 
+</head>
+<body class="feeds-bg">
+	 <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" >
+      <div class="container-fluid">
+         
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+              <span>More</span>
+            <i class="fa fa-angle-double-down"></i>
+              
+            </button>
+          
+            <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-md" aria-hidden="true"></i> WisorBook</a>
+        </div>
+        <div id="my" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right shiftLeft">
+      
+              <li><a href="index.html"><i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+              <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav><br/><br/><br/> <!--NAV END-->
+
+    <!--Main content-->
+    <div class="container-fluid  ">
+    	<div class="row">
+    		<div class="col-sm-2 col-md-2 hidden-xs">
+    			<div class="feed-adjust">
+	    			<img src="images/profile.png" class="feed-profile img-responsive thumbnail "/>
+	    			 <h4 class="name text-center"><strong></strong></h4>
+    			</div>
+    		</div>
+    		
+    		<div class="col-xs-10 col-xs-offset-2 col-sm-9 col-sm-offset-1 col-md-offset-0 col-md-7 col-md-offset-0 col-lg-7 posts">
+    			<div class="text-center">
+                  <i class="fa fa-spinner fa-pulse  "></i>
+               </div>
+    		</div>
+    	   
+    		<div class="col-md-3 hidden-xs  hidden-sm">
+    				
+					<h4 class="text-success">Recent News</h4><hr>
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active"><a data-toggle="tab" href="#international" title="International"><i class="fa fa-globe" aria-hidden="true"> </i></a></li>
+						<li><a data-toggle="tab" href="#national" title="National"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+						
+						<li><a data-toggle="tab" href="#entertainment" title="Entertainment"><i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
+						
+					  </ul>
+										
+					<div class="tab-content">
+					  <div id="international" class="tab-pane fade in active">
+					   <div id="news1">
+				          <div class="text-success">'Flaming van' ploughs into Shanghai pedestrians</div><!--News title-->
+					<!--News info here-->
+					     <div class="text-info">The crash came as Theresa May was holding a speech in the city, but Chinese police say it was an accident.<p></p>
+					      </div>
+					      <hr>
+                         </div>
+				      </div><!--international end-->	
+				      <div id="national" class="tab-pane fade">
+					
+						 <div id="news1">
+					        <div class="text-success">How millennials and Gen-X are changing Indian luxury hospitality industry</div><!--News title-->
+					
+					        <div class="text-info"><p>With the growth of the luxury market in India, the customer profile has evolved and there is a new set of consumers - the Millennials and Gen-X. With novel expectations, this consumer has changed the landscape of luxury, evolving from old world and traditional to new-age and experiential.</p>
+					        </div>
+					        <hr>
+                         </div>
+						
+							
+				       </div><!--national end-->	
+				
+				       <div id="entertainment" class="tab-pane fade">
+					
+					     <div id="news1">
+					       <div class="text-success">Teachers do not want to work in rural areas: Union HRD Minister Prakash Javadekar</div><!--News title-->
+					       <div class="text-info"><p>A large number of teachers were appointed under the Sarva Shiksha Abhiyan and RTE. It's impossible to confirm all of them at one go. Since education is a state subject, every state has its own rules. </p>
+					       </div>
+					       <hr>
+                         </div>
+						
+							
+				      </div>	<!--education end-->	
+				
+					
+				    </div><!-- end tab content-->
+			  
+    		</div><!--col-md-3-->
+
+    	</div><!--Row END-->
+
+
+    </div><!--CONTAINER FLUID END-->
+    <!-- FOR GETTING FACEBOOK TOKEN FROM USER -->
+<a href="#myModalpost" class="btn btn-primary btn-sm hidden" data-toggle="modal" id="get">Check</a>
+    <div class="modal fade-scale" id="myModalpost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel" style="color: green">Token Information</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="postby">Enter Facebook Token Information</label>
+                <input type="text" class="form-control" id="token" placeholder="Enter your token">
+                <p id="vname"></p>
+              </div>
+       
+          
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="go">Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END OF USER INPUT TAKING MODAL -->
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Bootstrap JS CDN-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>  
+<!--Lodash javascript library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<!--my info javascript file-->
+ <script src="js/feed.js"></script>
+</body>
+</html>
